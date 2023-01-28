@@ -89,6 +89,8 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         audioElement.src=`songs/${songIndex}.mp3`;
         masterSongName.innerText= songs[songIndex].songName;
         audioElement.pause();
+         
+        audioElement.currentTime= 2;
         gif.style.opacity=0;
         masterPlay.classList.remove('fa-pause-circle');
         masterPlay.classList.add('fa-play-circle');
